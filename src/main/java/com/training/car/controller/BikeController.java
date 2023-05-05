@@ -23,7 +23,7 @@ import com.training.car.service.BikeService;
 public class BikeController {
 	@Autowired
 	BikeService BikesSer;
-	@PostMapping(value = "/add")
+	@PostMapping(value = "/addcar")
 	public String addBike(@RequestBody Bike bikes) {
 		return BikesSer.addBike(bikes);
 
